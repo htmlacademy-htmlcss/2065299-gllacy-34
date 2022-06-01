@@ -25,15 +25,137 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
   color: #2d3440;
   background-color: #feafc3;
 }
 
-.navigation-link {
-  font-family: "Inter", sans-serif;
+.page-header {
   line-height: 20px;
+}
+
+.navigation-link {
+  text-decoration: none;
   color: inherit;
+}
+
+.user-navigation-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-contact-phone-link {
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slider-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.delivery-title {
   text-align: left;
+}
+
+.gift-description {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.product-item {
+  background-color: #fcfcfc;
+}
+
+.product-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #2d3440;
+}
+
+.product-item-link {
   text-decoration: none;
 }
+
+.product-item-description {
+  color: #565c66;
+}
+
+.product-item-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
