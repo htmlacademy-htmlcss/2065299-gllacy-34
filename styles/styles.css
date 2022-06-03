@@ -283,9 +283,7 @@ body {
 
 .pagination-current {
   background-color: #fcfcfc;
-  padding: 2px 7px;
-  border-radius: 76px;
-  display: inline-block;
+    border-radius: 76px;
 }
 
 
