@@ -28,14 +28,18 @@ body {
   line-height: 22px;
   color: #2d3440;
   margin: 0;
+  background-color: transparent;
+}
+
+.pink-theme {
   background-color: #feafc3;
 }
 
-.banana-theme {
+.blue-theme {
   background-color: #69a9ff;
 }
 
-.marshmallow-theme {
+.yellow-theme {
   background-color: #fcc850;
 }
 
