@@ -447,19 +447,43 @@ input::placeholder {
 .catalog-filter {
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 823px;
+}
+
+.catalog-filter-list {
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  border-radius: 18px;
 }
 
 .catalog-filter-group {
   border: 0;
 }
 
-.catalog-filter-list {
-  background-color: rgba(252, 252, 252, 0.3);
-}
-
 .select-control {
   background-color: rgba(252, 252, 252, 0.3);
   border: 0;
+}
+
+.pagination-wrapper {
+  display: flex;
+}
+
+.pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.pagination-wrapper .order-button {
+  margin-left: 381px;
 }
 
 .pagination-link {
