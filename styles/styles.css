@@ -102,10 +102,13 @@ object-fit: contain;
   line-height: 20px;
 }
 
-.navigation {
-  display: flex;
+.page-container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation-list {
@@ -147,11 +150,6 @@ object-fit: contain;
   font-style: normal;
   text-decoration: none;
   color: inherit;
-}
-
-.page-container {
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .slider-list {
@@ -381,10 +379,8 @@ input::placeholder {
   color: #2d3440;
 }
 
-.page-footer-container {
+.page-footer {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .social-list {
