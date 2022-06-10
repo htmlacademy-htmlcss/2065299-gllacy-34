@@ -231,7 +231,7 @@ object-fit: contain;
   margin-right: 30px;
 }
 
-.product-item:last-child {
+.product-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -481,11 +481,11 @@ input::placeholder {
   margin: 0;
   list-style: none;
   display: flex;
-  margin-left: auto;
+  align-self: center;
 }
 
 .pagination-wrapper .order-button {
-  margin-left: 381px;
+  margin-left: auto;
 }
 
 .pagination-link {
