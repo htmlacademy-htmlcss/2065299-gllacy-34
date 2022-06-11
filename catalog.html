@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="pink-theme">
+    <div class="body-container pink-theme">
       <header class="page-header">
-        <nav class="navigation">
+        <nav class="navigation page-container">
           <a class="navigation-logo" href="index.html">
               <img class="page-header-logo" src="images/logo/logo.svg" width="137" height="56" alt="Логотип магазина мороженого Глейси.">
           </a>
@@ -23,27 +23,29 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
-          <address class="navigation-contact-phone">
-            <a class="navigation-contact-phone-link" href="tel:+78005558628">+7 800 555-8628</a>
-          </address>
-          <ul class="navigation-list user-navigation">
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Вход</a>
-            </li>
-            <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">
-                <span class="visually-hidden">Корзина</span>
-              </a>
-            </li>
-          </ul>
+          <div class="user-nav-wrapper">
+            <address class="navigation-contact-phone">
+              <a class="navigation-contact-phone-link" href="tel:+78005558628">+7 800 555-8628</a>
+            </address>
+            <ul class="user-navigation-list">
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">Вход</a>
+              </li>
+              <li class="user-navigation-item">
+                <a class="user-navigation-link" href="#">
+                  <span class="visually-hidden">Корзина</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
-      <main class="main-inner">
+      <main class="main-container page-container">
         <header class="inner-header">
           <h1 class="visually-hidden">Каталог</h1>
           <ol class="breadcrumbs">
@@ -271,37 +273,39 @@
               </a>
             </li>
           </ul>
-          <a class="button order-button" href="#">Показать ещё</a>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item  pagination-current">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination-wrapper">
+            <a class="button order-button" href="#">Показать ещё</a>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item  pagination-current">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-container">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-item-button" href="https://t.me/htmlacademy">
