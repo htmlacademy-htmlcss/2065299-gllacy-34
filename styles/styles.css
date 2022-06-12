@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 html {
   height: 100%;
 }
@@ -36,15 +40,26 @@ body {
   height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-max-width: 100%;
-object-fit: contain;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .body-container {
@@ -123,6 +138,10 @@ object-fit: contain;
   margin: 24px 16px 24px 0;
 }
 
+.page-header-logo {
+  display: block;
+}
+
 .navigation-link {
   text-decoration: none;
   color: inherit;
@@ -137,7 +156,6 @@ object-fit: contain;
   margin: 0;
   padding: 0;
   max-width: 500px;
-
 }
 
 .user-navigation-link {
@@ -197,7 +215,6 @@ object-fit: contain;
   padding: 0;
   list-style: none;
 }
-
 
 .gift-item {
   background-color: #ff7799;
@@ -262,7 +279,7 @@ object-fit: contain;
 
 .waffle-wrapper {
   background-color: #ffffff;
-  background-image:  url("../images/background/waffle.jpg");
+  background-image: url("../images/background/waffle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1170px;
