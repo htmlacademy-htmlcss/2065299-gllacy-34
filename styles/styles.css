@@ -23,7 +23,7 @@
 }
 
 * {
-  outline: 1px solid red;
+  outline: 1px solid white
 }
 
 html {
@@ -115,7 +115,7 @@ img {
 
 .page-header {
   line-height: 20px;
-}
+ }
 
 .page-container {
   width: 1170px;
@@ -124,18 +124,22 @@ img {
 
 .navigation {
   display: flex;
+  align-items: center;
+  padding: 24px 0;;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  list-style: none;
-  width: 500px;
+  list-style-type: none;
+  width: 530px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-logo {
   display: block;
-  margin: 24px 16px 24px 0;
+  margin-right: 16px;
 }
 
 .page-header-logo {
@@ -143,24 +147,36 @@ img {
 }
 
 .navigation-link {
+  display: block;
+  padding: 8px 16px;
   text-decoration: none;
   color: inherit;
 }
 
 .user-nav-wrapper {
   margin-left: auto;
+  display: flex;
 }
 
 .user-navigation-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   max-width: 500px;
 }
 
+.user-navigation-item:not(:last-child) {
+  margin-right: 16px;
+}
+
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
+  min-width: 32px;
+  min-height: 32px;
+  display: block;
 }
 
 .navigation-contact-phone-link {
@@ -168,6 +184,9 @@ img {
   font-style: normal;
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 6px 0;
+  margin-right: 16px;
 }
 
 .slider-list {
