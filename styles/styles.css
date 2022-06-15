@@ -263,6 +263,22 @@ img {
   margin-right: 16px;
 }
 
+.slider-pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.slider-pagination-item {
+  width: 12px;
+  height: 12px
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .title {
   font-size: 32px;
   line-height: 46px;
