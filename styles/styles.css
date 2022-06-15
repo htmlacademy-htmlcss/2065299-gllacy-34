@@ -232,10 +232,16 @@ img {
 
 .slider-element-img {
   width: 348px;
+  display: block;
 }
 
 .choosen-slider-item {
   display: block;
+}
+
+.slider-social-list {
+  align-self: flex-end;
+  margin-left: auto;
 }
 
 .social-list {
