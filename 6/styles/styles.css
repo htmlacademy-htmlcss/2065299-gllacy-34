@@ -158,6 +158,9 @@ img {
 .user-nav-wrapper {
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+
 }
 
 .user-navigation-list {
@@ -176,9 +179,16 @@ img {
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+}
+
+.icon-nav-link {
   min-width: 32px;
   min-height: 32px;
-  display: block;
+}
+
+.text-nav-link {
+  padding: 6px 16px 6px 38px;
 }
 
 .navigation-contact-phone-link {
@@ -188,6 +198,9 @@ img {
   color: inherit;
   display: block;
   padding: 6px 0;
+}
+
+.navigation-contact-phone {
   margin-right: 16px;
 }
 
@@ -232,16 +245,15 @@ img {
 
 .slider-element-img {
   width: 348px;
-  display: block;
 }
 
 .choosen-slider-item {
   display: block;
 }
 
-.slider-social-list {
-  align-self: flex-end;
-  margin-left: auto;
+.slider-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-list {
@@ -334,6 +346,7 @@ img {
   padding-bottom: 36px;
   display: grid;
   gap: 28px;
+  grid-auto-rows: min-content;
 }
 
 .condition-wrapper .order-button {
@@ -439,6 +452,7 @@ img {
   color: #565c66;
   font-weight: 400;
   margin-bottom: 12px;
+  max-width: 200px;
 }
 
 .blog-link {
