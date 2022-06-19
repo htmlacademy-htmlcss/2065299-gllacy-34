@@ -650,6 +650,7 @@ input::placeholder {
   margin-top: 32px;
   margin-bottom: 16px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
