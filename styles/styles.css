@@ -160,7 +160,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 400px;
-
 }
 
 .user-navigation-list {
@@ -284,7 +283,7 @@ img {
 
 .slider-pagination-item {
   width: 12px;
-  height: 12px
+  height: 12px;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -296,7 +295,7 @@ img {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 56px;
 }
 
@@ -308,6 +307,10 @@ img {
 
 .gift {
   margin-bottom: 80px;
+}
+
+.title-gift {
+  width: 434px;
 }
 
 .gift-list {
@@ -351,6 +354,10 @@ img {
 
 .condition-wrapper .order-button {
   justify-self: start;
+}
+
+.title-offer {
+  width: 527px;
 }
 
 .popular {
@@ -416,18 +423,28 @@ img {
   background-color: #ffffff;
   border-radius: 16px;
   width: 1122px;
-  padding: 56px 40px;
+  padding: 56px 40px 16px;
+}
+
+.title-advantages {
+  width: 995px;
 }
 
 .advantages-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .advantages-item {
   color: #565c66;
+  margin: 0;
+  width: 442px;
+  margin-bottom: 40px;
 }
 
 .index-column {
@@ -483,6 +500,12 @@ img {
   padding: 26px;
 }
 
+.newsletter-form {
+  display: grid;
+  grid-template-columns: auto min-content;
+  gap: 14px;
+}
+
 .newsletter-add {
   color: #565c66;
   margin: 0;
@@ -507,16 +530,18 @@ input::placeholder {
   background-size: cover;
   border-radius: 16px;
   margin-bottom: 80px;
-  padding: 64px;
+  padding: 64px 64px 64px 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .delivery-description {
   color: #565c66;
+  margin: 0;
 }
 
-.delivery-form {
+.delivery-form-block {
   background-color: #ffffff;
   width: 500px;
   border-radius: 8px;
@@ -530,12 +555,38 @@ input::placeholder {
 
 .delivery-form-description {
   color: #565c66;
+  margin: 0;
+  margin-bottom: 32px;
+  width: 380px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-adress {
+  grid-column: 1/-1;
+}
+
+.delivery-form .button {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
   line-height: 20px;
   font-weight: 700;
   color: #2d3440;
+  margin-bottom: 8px;
 }
 
 .main-contact {
@@ -606,6 +657,8 @@ input::placeholder {
   width: 356px;
   margin-right: 200px;
   display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 24px;
 }
 
 .about-us-link {
