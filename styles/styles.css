@@ -376,6 +376,7 @@ img {
   background-color: #fcfcfc;
   width: 270px;
   border-radius: 8px;
+  padding: 0 40px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -407,12 +408,16 @@ img {
 
 .product-item-description {
   color: #565c66;
+  margin: 0;
+  margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .product-item-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-right: auto;
 }
 
 .waffle-wrapper {
