@@ -179,7 +179,9 @@
           </div>
         </section>
         <section class="gift">
-          <h2 class="title">Заказывайте мороженое и получайте подарки!</h2>
+          <h2 class="title title-gift">
+            Заказывайте мороженое и получайте подарки!
+          </h2>
           <ul class="gift-list">
             <li class="gift-item">
               <div class="condition-wrapper">
@@ -218,7 +220,7 @@
           </ul>
         </section>
         <section class="popular">
-          <h2 class="title">
+          <h2 class="title title-offer">
             Попробуйте самые популярные вкусы нашего мороженого
           </h2>
           <ul class="popular-list">
@@ -303,7 +305,7 @@
         <div class="waffle-wrapper">
           <section class="advantages">
             <h2 class="visually-hidden">Приемущества</h2>
-            <p class="title">
+            <p class="title title-advantages">
               Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
               собственного производства на развес
             </p>
@@ -314,14 +316,14 @@
                 технологий.
               </li>
               <li class="advantages-item">
-                Для приготовления мороженого используются сливки и молоко
-                высочайшего качества. Все ингредиенты и добавки произведены из
-                натурального сырья.
+                Закупка ингредиентов производится только<br>у проверенных
+                фермерских хозяйств, с которыми<br>нас связывает долговременное
+                сотрудничество.
               </li>
               <li class="advantages-item">
-                Закупка ингредиентов производится только у проверенных
-                фермерских хозяйств, с которыми нас связывает долговременное
-                сотрудничество.
+                Для приготовления мороженого используются сливки и молоко
+                высочайшего качества. Все ингредиенты<br>и добавки произведены из
+                натурального сырья.
               </li>
               <li class="advantages-item">
                 Доставка нашего мороженого осуществляется в специальном
@@ -374,44 +376,46 @@
               привезёт вам ваш заказ в течение часа!
             </p>
           </div>
-          <form
-            class="delivery-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
+          <div class="delivery-form-block">
             <p class="delivery-form-description">
               Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
               подтвердить заказ.
             </p>
-            <p class="delivery-form-date">
-              <label class="form-label" for="delivery-date">Дата</label>
-              <input
-                type="text"
-                id="delivery-date"
-                name="delivery-date"
-                placeholder="01.04.2020"
-              />
-            </p>
-            <p class="delivery-form-phone">
-              <label class="form-label" for="delivery-phone">Телефон</label>
-              <input
-                type="tel"
-                id="delivery-phone"
-                name="delivery-phone"
-                placeholder="+7 800 999-00-00"
-              />
-            </p>
-            <p class="delivery-form-adress">
-              <label class="form-label" for="delivery-adress">Адрес</label>
-              <input
-                type="text"
-                id="delivery-adress"
-                name="delivery-adress"
-                placeholder="ул. Большая Конюшенная, 19/8"
-              />
-            </p>
-            <button class="button" type="submit">Отправить</button>
-          </form>
+            <form
+              class="delivery-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <p class="field-group delivery-form-date">
+                <label class="form-label" for="delivery-date">Дата </label>
+                <input
+                  type="text"
+                  id="delivery-date"
+                  name="delivery-date"
+                  placeholder="01.04.2020"
+                />
+              </p>
+              <p class="field-group delivery-form-phone">
+                <label class="form-label" for="delivery-phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="delivery-phone"
+                  name="delivery-phone"
+                  placeholder="+7 800 999-00-00"
+                />
+              </p>
+              <p class="field-group delivery-form-adress">
+                <label class="form-label" for="delivery-adress">Адрес </label>
+                <input
+                  type="text"
+                  id="delivery-adress"
+                  name="delivery-adress"
+                  placeholder="ул. Большая Конюшенная, 19/8"
+                />
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
         <section class="main-contact">
           <div class="main-contact-wrapper">

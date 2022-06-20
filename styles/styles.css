@@ -23,7 +23,7 @@
 }
 
 * {
-  outline: 1px solid white;
+  outline: 1px solid red;
 }
 
 html {
@@ -160,7 +160,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 400px;
-
 }
 
 .user-navigation-list {
@@ -284,7 +283,7 @@ img {
 
 .slider-pagination-item {
   width: 12px;
-  height: 12px
+  height: 12px;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -296,7 +295,7 @@ img {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 56px;
 }
 
@@ -308,6 +307,10 @@ img {
 
 .gift {
   margin-bottom: 80px;
+}
+
+.title-gift {
+  width: 434px;
 }
 
 .gift-list {
@@ -353,6 +356,10 @@ img {
   justify-self: start;
 }
 
+.title-offer {
+  width: 527px;
+}
+
 .popular {
   margin-bottom: 80px;
 }
@@ -369,14 +376,18 @@ img {
   background-color: #fcfcfc;
   width: 270px;
   border-radius: 8px;
+  padding: 0 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-list .product-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.product-item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .product-img {
+  display: block;
   border-radius: 50%;
 }
 
@@ -385,20 +396,28 @@ img {
   line-height: 24px;
   font-weight: 700;
   color: #2d3440;
+  margin: 0;
+  text-align: center;
 }
 
 .product-item-link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .product-item-description {
   color: #565c66;
+  margin: 0;
+  margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .product-item-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-right: auto;
 }
 
 .waffle-wrapper {
@@ -416,18 +435,28 @@ img {
   background-color: #ffffff;
   border-radius: 16px;
   width: 1122px;
-  padding: 56px 40px;
+  padding: 56px 40px 16px;
+}
+
+.title-advantages {
+  width: 995px;
 }
 
 .advantages-list {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .advantages-item {
   color: #565c66;
+  margin: 0;
+  width: 442px;
+  margin-bottom: 40px;
 }
 
 .index-column {
@@ -483,6 +512,12 @@ img {
   padding: 26px;
 }
 
+.newsletter-form {
+  display: grid;
+  grid-template-columns: auto min-content;
+  gap: 14px;
+}
+
 .newsletter-add {
   color: #565c66;
   margin: 0;
@@ -507,16 +542,18 @@ input::placeholder {
   background-size: cover;
   border-radius: 16px;
   margin-bottom: 80px;
-  padding: 64px;
+  padding: 64px 64px 64px 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .delivery-description {
   color: #565c66;
+  margin: 0;
 }
 
-.delivery-form {
+.delivery-form-block {
   background-color: #ffffff;
   width: 500px;
   border-radius: 8px;
@@ -530,12 +567,38 @@ input::placeholder {
 
 .delivery-form-description {
   color: #565c66;
+  margin: 0;
+  margin-bottom: 32px;
+  width: 380px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.delivery-form-adress {
+  grid-column: 1/-1;
+}
+
+.delivery-form .button {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
   line-height: 20px;
   font-weight: 700;
   color: #2d3440;
+  margin-bottom: 8px;
 }
 
 .main-contact {
@@ -606,6 +669,8 @@ input::placeholder {
   width: 356px;
   margin-right: 200px;
   display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px 24px;
 }
 
 .about-us-link {
@@ -650,6 +715,7 @@ input::placeholder {
   margin-top: 32px;
   margin-bottom: 16px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -699,9 +765,13 @@ input::placeholder {
   padding: 0;
   list-style-type: none;
   display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  gap: 40px 30px;
+  margin-bottom: 16px;
 }
 
 .pagination-wrapper {
+  padding: 41px 0;
   display: flex;
   justify-content: flex-end;
 }
