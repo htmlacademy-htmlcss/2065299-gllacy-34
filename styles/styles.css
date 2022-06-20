@@ -417,7 +417,12 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-right: auto;
+}
+
+.price-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .waffle-wrapper {
@@ -435,7 +440,7 @@ img {
   background-color: #ffffff;
   border-radius: 16px;
   width: 1122px;
-  padding: 56px 40px 16px;
+  padding: 56px 40px;
 }
 
 .title-advantages {
@@ -446,17 +451,15 @@ img {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 510px 510px;
+  gap: 40px 32px;
 
 }
 
 .advantages-item {
   color: #565c66;
   margin: 0;
-  width: 442px;
-  margin-bottom: 40px;
 }
 
 .index-column {
