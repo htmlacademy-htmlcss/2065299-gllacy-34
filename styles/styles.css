@@ -155,29 +155,6 @@ img {
   color: inherit;
 }
 
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #2D3440;
-}
-
- .text-nav-link .navigation-icon {
-  right: auto;
-  left: 16px;
-  margin: auto 0;
-}
-
-.text-nav-link-cart{
-  background-image: url("../images/icon/cart.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center left 16px;
-}
-
 .user-nav-wrapper {
   margin-left: auto;
   display: flex;
@@ -207,9 +184,11 @@ img {
 .icon-nav-link {
   min-width: 32px;
   min-height: 32px;
-  position: relative;
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-nav-link {
@@ -217,6 +196,12 @@ img {
   padding: 6px 16px 6px 38px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.3);
+}
+
+.text-nav-link svg {
+  left: 16px;
+  margin: auto 0;
+  position: absolute;
 }
 
 .navigation-contact-phone-link {
@@ -235,6 +220,7 @@ img {
 .slider {
   margin-bottom: 80px;
   padding-left: 70px;
+  position: relative;
 }
 
 .slider-list {
@@ -291,6 +277,7 @@ img {
   border: none;
   background-color: #ffffff;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
@@ -304,8 +291,15 @@ img {
   border-radius: 50%;
   background-color: #fcfcfc;
   opacity: 0.3;
-  border: 2px solid #fcfcfc;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
 
+}
+
+.slider-prev {
+  background-image: url("../images/icon/arrow-left.svg");
 }
 
 .social-list {
