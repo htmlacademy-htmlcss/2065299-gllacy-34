@@ -22,9 +22,9 @@
   font-display: swap;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 html {
   height: 100%;
@@ -142,6 +142,7 @@ img {
 .navigation-logo {
   display: block;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .page-header-logo {
@@ -153,13 +154,31 @@ img {
   padding: 8px 16px;
   text-decoration: none;
   color: inherit;
+  border-radius: 30px;
+  outline: none;
 }
+
+.navigation-contact-phone-link {
+  font-weight: 700;
+  font-style: normal;
+  padding: 6px 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 30px;
+  outline: none;
+}
+
+.navigation-contact-phone {
+  margin-right: 16px;
+}
+
 
 .user-nav-wrapper {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 480px;
 }
 
 .user-navigation-list {
@@ -204,17 +223,29 @@ img {
   position: absolute;
 }
 
-.navigation-contact-phone-link {
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 6px 0;
+
+.navigation-link:hover,
+.navigation-contact-phone-link:hover,
+.icon-nav-link:hover,
+.text-nav-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
-.navigation-contact-phone {
-  margin-right: 16px;
+.navigation-link:focus,
+.navigation-contact-phone-link:focus,
+.icon-nav-link:focus,
+.text-nav-link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2d3440;
+  outline-offset: -2px;
+}
+
+.navigation-link:active,
+.navigation-contact-phone-link:active,
+.icon-nav-link:active,
+.text-nav-link:active {
+  background-color: rgba(252, 252, 252, 1);
+  outline: none;
 }
 
 .slider {
@@ -275,27 +306,24 @@ img {
   height: 12px;
   border-radius: 50%;
   border: none;
-  background-color: #ffffff;
-  opacity: 0.3;
+  background-color: rgba(252, 252, 252, 0.3);
   cursor: pointer;
 }
 
 .slider-pagination-button-current {
-  opacity: 1;
+  background-color: rgba(252, 252, 252, 1);
 }
 
 .slider-button {
   width: 38px;
   height: 38px;
-  border: none;
   border-radius: 50%;
-  background-color: #fcfcfc;
-  opacity: 0.3;
+  background-color: rgba(252, 252, 252, 0.3);
   position: absolute;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
-
+  border: 2px solid white;
 }
 
 .slider-prev {
@@ -475,6 +503,19 @@ img {
   justify-content: space-between;
 }
 
+.add-cart {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ff2f64;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .waffle-wrapper {
   background-color: #ffffff;
   background-image: url("../images/background/waffle.jpg");
@@ -504,7 +545,6 @@ img {
   display: grid;
   grid-template-columns: 510px 510px;
   gap: 40px 32px;
-
 }
 
 .advantages-item {
@@ -518,7 +558,7 @@ img {
   background-position: 8px 8px;
 }
 
-.advantages-item::before{
+.advantages-item::before {
   position: absolute;
   content: "";
   width: 48px;
@@ -526,24 +566,24 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
   box-sizing: border-box;
-  border: 2px solid #2D3440 ;
+  border: 2px solid #2d3440;
   top: 0;
   left: 0;
 }
 
-.advantages-item:nth-child(1){
+.advantages-item:nth-child(1) {
   background-image: url("../images/icon/ice-cream.svg");
 }
 
-.advantages-item:nth-child(2){
+.advantages-item:nth-child(2) {
   background-image: url("../images/icon/cow.svg");
 }
 
-.advantages-item:nth-child(3){
+.advantages-item:nth-child(3) {
   background-image: url("../images/icon/leaf.svg");
 }
 
-.advantages-item:nth-child(4){
+.advantages-item:nth-child(4) {
   background-image: url("../images/icon/thermometer.svg");
 }
 
@@ -776,7 +816,7 @@ input::placeholder {
   background-image: url("../images/icon/heart-fill.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
-  background-position: center left ;
+  background-position: center left;
 }
 
 .academy-logo {
@@ -830,7 +870,7 @@ input::placeholder {
 }
 
 .breadcrumbs-item:last-child {
-  border-bottom: 1px solid #2D3440 ;
+  border-bottom: 1px solid #2d3440;
 }
 
 .catalog-filter {
