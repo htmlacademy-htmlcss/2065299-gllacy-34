@@ -491,6 +491,41 @@ img {
 .advantages-item {
   color: #565c66;
   margin: 0;
+  padding-left: 64px;
+  position: relative;
+  background-color: #ffffff;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+}
+
+.advantages-item::before{
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  border: 2px solid #2D3440 ;
+  top: 0;
+  left: 0;
+}
+
+.advantages-item:nth-child(1){
+  background-image: url("../images/icon/ice-cream.svg");
+}
+
+.advantages-item:nth-child(2){
+  background-image: url("../images/icon/cow.svg");
+}
+
+.advantages-item:nth-child(3){
+  background-image: url("../images/icon/leaf.svg");
+}
+
+.advantages-item:nth-child(4){
+  background-image: url("../images/icon/thermometer.svg");
 }
 
 .index-column {
@@ -717,6 +752,12 @@ input::placeholder {
 
 .for-provider {
   font-weight: 700;
+  padding-left: 24px;
+  margin-left: -24px;
+  background-image: url("../images/icon/heart-fill.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center left ;
 }
 
 .academy-logo {
