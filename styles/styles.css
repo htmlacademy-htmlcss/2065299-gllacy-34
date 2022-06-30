@@ -228,6 +228,28 @@ img {
   cursor: pointer;
 }
 
+.navigation-logo:hover,
+.academy-logo-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  border-radius: 10px;
+}
+
+.navigation-logo:active,
+.academy-logo-link:active {
+  background-color: #fcfcfc;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.navigation-logo:focus-visible,
+.academy-logo-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: inset 0 0 0 2px #2d3440;
+  border-radius: 10px;
+  outline: none;
+}
+
 .page-header-logo {
   display: block;
 }
@@ -363,6 +385,10 @@ img {
   align-items: center;
 }
 
+.slider-element:not(:last-of-type) {
+  margin-right: 41px;
+}
+
 .slider-element-text {
   width: 470px;
   display: flex;
@@ -420,6 +446,10 @@ img {
   display: block;
 }
 
+.slider-element-img .slider-element-next {
+
+}
+
 .slider-element-active .slider-element-img::after {
   content: "";
   width: 312px;
@@ -436,7 +466,6 @@ img {
   content: "";
   border-radius: 50%;
   position: absolute;
-
   z-index: -1;
   width: 100px;
   height: 100px;
@@ -731,6 +760,14 @@ img {
   text-decoration: none;
   display: block;
   margin-bottom: 8px;
+}
+
+.product-item-link:hover .product-img {
+  box-shadow: 0 0 5px 6px rgba(255, 47, 100, 0.2);
+}
+
+.product-item-link:active .product-img {
+  box-shadow: 0 0 7px 8px rgba(255, 47, 100, 0.1);
 }
 
 .product-item-description {
@@ -1095,6 +1132,7 @@ input::placeholder {
   display: block;
 }
 
+
 .for-provider {
   font-weight: 700;
   padding-left: 24px;
@@ -1119,7 +1157,7 @@ input::placeholder {
   line-height: 16px;
 }
 
-.creator-description a {
+.creator-description-link {
   color: #2d3440;
 }
 
@@ -1246,14 +1284,14 @@ input::placeholder {
 }
 
 .pagination-next {
-  background-image: url(../images/icon/arrow-right.svg);
+  background-image: url("../images/icon/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center right;
 }
 
 .pagination-prev {
-  background-image: url(../images/icon/arrow-left-pagin.svg);
+  background-image: url("../images/icon/arrow-left-pagin.svg");
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center left;
@@ -1263,4 +1301,49 @@ input::placeholder {
 .pagination-prev:focus-visible {
   outline: none;
   box-shadow: 0 0 0 1px #2d3440;
+}
+
+.about-us-link:hover,
+.creator-description-link:hover,
+.breadcrumbs-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  border-radius: 10px;
+}
+
+.about-us-link:active,
+.creator-description-link:active,
+.breadcrumbs-link:active {
+  background-color: #fcfcfc;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.about-us-link:focus-visible,
+.creator-description-link:focus-visible,
+.breadcrumbs-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: inset 0 0 0 2px #2d3440;
+  border-radius: 10px;
+  outline: none;
+}
+
+.blog-link:hover,
+.main-contacts-phone:hover,
+.product-item-link:hover .product-item-title{
+  color: #ff7799;
+}
+
+.blog-link:active,
+.main-contacts-phone:active,
+.product-item-link:active .product-item-title {
+  color: #feafc3;
+}
+
+.blog-link:focus-visible,
+.main-contacts-phone:focus-visible {
+  color: #2d3440;
+  box-shadow: inset 0 0 0 2px #2d3440;
+  border-radius: 10px;
+  outline: none;
 }
