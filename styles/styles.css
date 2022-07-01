@@ -444,7 +444,7 @@ img {
   display: block;
 }
 
-.slider-element-next > .slider-element-img  {
+.slider-element-next > .slider-element-img {
   width: 100px;
   height: 150px;
   padding: 0;
@@ -457,7 +457,7 @@ img {
   border-radius: 50%;
   background-color: #ffcbd8;
   position: absolute;
-  left: 21;
+  left: 21px;
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
@@ -596,7 +596,6 @@ img {
   max-width: 210px;
   margin-bottom: 10px;
 }
-
 
 .social-item-button {
   display: block;
@@ -1140,7 +1139,6 @@ input::placeholder {
   color: #2d3440;
   display: block;
 }
-
 
 .for-provider {
   font-weight: 700;
