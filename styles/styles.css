@@ -154,7 +154,8 @@ img {
 
 .order-button-spinner {
   padding-right: 56px;
-  background-image: url(../images/icon/spinner.svg);
+  background-image: url("../images/icon/spinner.svg");
+  background-color: transparent;
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center right 32px;
@@ -162,7 +163,8 @@ img {
 
 .form-button-spinner {
   padding-right: 56px;
-  background-image: url(../images/icon/spinner-add.svg);
+  background-image: url("../images/icon/spinner-add.svg");
+  background-color: transparent;
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center right 32px;
@@ -984,11 +986,6 @@ img {
   margin-bottom: 42px;
 }
 
-input::placeholder {
-  font: inherit;
-  color: #b9b9b9;
-}
-
 .newsletter-form input,
 .delivery-form input {
   font: inherit;
@@ -1145,6 +1142,7 @@ input::placeholder {
   padding-left: 24px;
   margin-left: -24px;
   background-image: url("../images/icon/heart-fill.svg");
+  background-color: transparent;
   background-size: 16px 16px;
   background-repeat: no-repeat;
   background-position: center left;
@@ -1200,6 +1198,7 @@ input::placeholder {
 .breadcrumbs-item:not(:last-child) {
   padding-right: 28px;
   background-image: url("../images/icon/chevrons-right.svg");
+  background-color: transparent;
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: center right 8px;
@@ -1297,6 +1296,7 @@ input::placeholder {
 
 .pagination-next {
   background-image: url("../images/icon/arrow-right.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center right;
@@ -1304,6 +1304,7 @@ input::placeholder {
 
 .pagination-prev {
   background-image: url("../images/icon/arrow-left-pagin.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center left;
@@ -1348,4 +1349,51 @@ input::placeholder {
 .main-contacts-phone:focus-visible {
   box-shadow: inset 0 0 0 2px #2d3440;
   outline: none;
+}
+
+.field {
+  padding: 14px 16px;
+  margin: 0;
+  font: inherit;
+  line-height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+}
+
+.field:hover {
+  border: 1px solid #2d3440;
+}
+
+.field:focus-visible {
+  border: 2px solid #2d3440;
+  outline: none;
+}
+
+.field:invalid {
+  border: 1px solid #ea5454;
+}
+
+.field:invalid:hover {
+  border: 2px solid #ea5454;
+}
+
+.field:focus-visible:invalid {
+  border: 2px solid #ea5454;
+}
+
+.field:disabled {
+  background-color: #e7e7e7;
+  border: 1px solid #b9b9b9;
+  color: rgba(45, 52, 64, 0.65);
+}
+
+.field:disabled:hover {
+  background-color: #e7e7e7;
+  border: 1px solid #b9b9b9;
+  color: #2d3440;
+}
+
+.field::placeholder {
+  font: inherit;
+  color: #b9b9b9;
 }
