@@ -112,13 +112,16 @@ img {
   box-shadow: 0 0 0 2px #2d3440;
 }
 
-.form-button:focus:not(:active) {
+.form-button:focus-visible {
   color: #2d3440;
   background-color: #ff2f64;
   box-shadow: 0 0 0 2px #2d3440;
+  border: none;
+  outline: none;
 }
 
 .form-button:disabled {
+  font-weight: 400;
   color: #565c66;
   background-color: #b9b9b9;
   box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
@@ -148,6 +151,7 @@ img {
 
 .order-button:disabled {
   color: #b9b9b9;
+  font-weight: 400;
   background-color: #e7e7e7;
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
 }
@@ -233,17 +237,17 @@ img {
   cursor: pointer;
 }
 
-.navigation-logo:hover,
+.navigation-logo[href]:hover,
 .academy-logo-link:hover {
   box-shadow: 0 4px 2px 0 rgba(252, 252, 252, 0.5);
 }
 
-.navigation-logo:active,
+.navigation-logo[href]:active,
 .academy-logo-link:active {
   box-shadow: 0 4px 2px 0 rgba(252, 252, 252, 0.3);
 }
 
-.navigation-logo:focus-visible,
+.navigation-logo[href]:focus-visible,
 .academy-logo-link:focus-visible {
   background-color: rgba(252, 252, 252, 0.5);
   box-shadow: inset 0 0 0 2px #2d3440;
@@ -327,14 +331,14 @@ img {
   position: absolute;
 }
 
-.navigation-link:hover,
+.navigation-link[href]:hover,
 .navigation-contact-phone-link:hover,
 .icon-nav-link:hover,
 .text-nav-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.navigation-link:focus-visible,
+.navigation-link[href]:focus-visible,
 .navigation-contact-phone-link:focus-visible,
 .icon-nav-link:focus-visible,
 .text-nav-link:focus-visible {
@@ -343,7 +347,7 @@ img {
   outline: none;
 }
 
-.navigation-link:active,
+.navigation-link[href]:active,
 .navigation-contact-phone-link:active,
 .icon-nav-link:active,
 .text-nav-link:active {
@@ -541,6 +545,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .slider-prev {
@@ -565,7 +570,7 @@ img {
 }
 
 .slider-button:active {
-  background-color: #ffcbd8;
+  background-color: rgba(252, 252, 252, 0.5);
   border: none;
 }
 
@@ -586,10 +591,13 @@ img {
 .slider-button:disabled {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
+  opacity: 0.4;
 }
+
 
 .slider-button:disabled .icon-slider-button {
   fill: #fcfcfc;
+  opacity: 0.4;
 }
 
 .social-list {
@@ -599,7 +607,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 210px;
-  margin-bottom: 10px;
+
 }
 
 .social-item-button {
@@ -608,6 +616,7 @@ img {
   height: 24px;
   border-radius: 50%;
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  margin-bottom: 10px;
 }
 
 .social-icon {
@@ -620,10 +629,11 @@ img {
 
 .social-item-button:active {
   background-color: #565c66;
+  opacity: 0.5;
 }
 
 .social-item-button:active .social-icon {
-  fill: rgba(252, 252, 252, 0.3);
+  /* fill: rgba(252, 252, 252, 0.3); */
 }
 
 .social-item-button:focus-visible {
@@ -845,12 +855,12 @@ img {
   fill: #2d3440;
 }
 
-.add-cart:disabled {
+.cart-disabled {
   background-color: #565c66;
   box-shadow: none;
 }
 
-.add-cart:disabled {
+.cart-disabled .cart-icon{
   fill: #b9b9b9;
 }
 
@@ -1217,7 +1227,6 @@ img {
   line-height: 20px;
   display: flex;
   flex-wrap: wrap;
-  width: 823px;
   margin-bottom: 78px;
 
 }
@@ -1228,7 +1237,7 @@ img {
   list-style-type: none;
   display: flex;
   border-radius: 18px;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 8px 8px 24px;
 
 }
 
@@ -1339,19 +1348,19 @@ img {
 
 .about-us-link:hover,
 .creator-description-link:hover,
-.breadcrumbs-link:hover {
+.breadcrumbs-link[href]:hover {
   text-shadow: 2px 2px 1px rgba(252, 252, 252, 0.7);
 }
 
 .about-us-link:active,
 .creator-description-link:active,
-.breadcrumbs-link:active {
+.breadcrumbs-link[href]:active {
   color: #565c66;
 }
 
 .about-us-link:focus-visible,
 .creator-description-link:focus-visible,
-.breadcrumbs-link:focus-visible {
+.breadcrumbs-link[href]:focus-visible {
   box-shadow: inset 0 0 0 2px #2d3440;
   outline: none;
 }
@@ -1526,4 +1535,40 @@ img {
   border: 2px solid #fcfcfc;
   outline: none;
   padding: 6px 61px 6px 14px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  margin-right: 16px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #2d3440;
+  left: 0;
+  top: 2px;
+}
+
+.control:hover .control-mark {
+  border-color: #fcfcfc;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: rgba(45, 52, 64, 0.4);
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: #2d3440;
+  border-radius: 50%;
+  content: "";
 }
