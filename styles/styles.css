@@ -181,9 +181,7 @@ img {
   box-shadow: 0 0 0 2px #fcfcfc;
   align-self: end;
   margin-bottom: 16px;
-
 }
-
 
 .filter-button:hover {
   background-color: #fcfcfc;
@@ -594,7 +592,6 @@ img {
   opacity: 0.4;
 }
 
-
 .slider-button:disabled .icon-slider-button {
   fill: #fcfcfc;
   opacity: 0.4;
@@ -607,7 +604,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 210px;
-
 }
 
 .social-item-button {
@@ -860,7 +856,7 @@ img {
   box-shadow: none;
 }
 
-.cart-disabled .cart-icon{
+.cart-disabled .cart-icon {
   fill: #b9b9b9;
 }
 
@@ -1228,7 +1224,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 78px;
-
 }
 
 .catalog-filter-list {
@@ -1238,8 +1233,11 @@ img {
   display: flex;
   border-radius: 18px;
   padding: 8px 8px 8px 24px;
-
 }
+
+/* .catalof-filter-group:last-child {
+  margin-right: 16px;
+} */
 
 .catalog-filter-group {
   margin: 0;
@@ -1249,7 +1247,6 @@ img {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-
 }
 .catalog-filter-title,
 .control-select {
@@ -1501,7 +1498,7 @@ img {
   margin: 0;
 }
 
-.range-price{
+.range-price {
   display: flex;
 }
 
@@ -1509,7 +1506,6 @@ img {
 .range-price,
 .catalog-filter-title {
   margin-left: 16px;
-
 }
 
 .select-group {
@@ -1540,35 +1536,46 @@ img {
 .control {
   position: relative;
   display: block;
-  padding-left: 24px;
   margin-right: 16px;
+  padding-left: 24px;
 }
 
 .control-mark {
   position: absolute;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
-  border: 2px solid #2d3440;
   left: 0;
   top: 2px;
 }
 
-.control:hover .control-mark {
-  border-color: #fcfcfc;
+.checkbox-input-checked {
+  display: none;
 }
 
-.control-input:disabled + .control-mark {
-  border-color: rgba(45, 52, 64, 0.4);
+.control-input[type="checkbox"]:checked ~ .checkbox-input-checked {
+  display: inline-block;
+}
+
+.control-input[type="checkbox"]:checked ~ .checkbox-input {
+  display: none;
 }
 
 .control-input[type="radio"]:checked + .control-mark::after {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 6px;
   height: 6px;
   background-color: #2d3440;
   border-radius: 50%;
   content: "";
 }
+
+/* .control:hover .control-mark {
+  border-color: #fcfcfc;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: rgba(45, 52, 64, 0.4);
+} */
