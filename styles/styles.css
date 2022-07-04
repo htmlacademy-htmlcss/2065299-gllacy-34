@@ -1593,3 +1593,60 @@ img {
   + .control-mark::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
+
+/* тултип */
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+}
+
+.tooltip-toggle {
+  border: none;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  background-image: url("../images/icon/Info.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #ffffff;
+  color: #565c66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px 8px;
+  width: 169px;
+  border: 1px solid #b9b9b9;
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: "";
+  background-image: url("images/tooltip-arrow.svg");
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}

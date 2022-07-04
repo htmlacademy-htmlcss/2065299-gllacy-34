@@ -549,7 +549,7 @@
                   placeholder="email@example.com"
                   type="email"
                   name="newsletter-email"
-                   />
+                />
                 <button class="button form-button" type="submit">
                   Отправить
                 </button>
@@ -579,7 +579,22 @@
               method="post"
             >
               <p class="field-group delivery-form-date">
-                <label class="form-label" for="delivery-date">Дата </label>
+                <span class="form-label"
+                  ><label class="form-label" for="delivery-date">Дата </label>
+                  <span class="tooltip">
+                    <button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-labelledby="tooltip-label-date"
+                    ></button>
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-date"
+                      >Введите дату доставки</span
+                    >
+                  </span>
+                </span>
                 <input
                   class="field"
                   type="text"
@@ -599,7 +614,22 @@
                 />
               </p>
               <p class="field-group delivery-form-adress">
-                <label class="form-label" for="delivery-adress">Адрес </label>
+                <span class="form-label"
+                  ><label class="form-label" for="delivery-date">Адрес </label>
+                  <span class="tooltip"
+                    ><button
+                      class="tooltip-toggle"
+                      type="button"
+                      aria-labelledby="tooltip-label-adress"
+                    ></button
+                    ><span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-adress"
+                      >Введите название улицы, дома и квартиры</span
+                    >
+                  </span>
+                </span>
                 <input
                   class="field"
                   type="text"
