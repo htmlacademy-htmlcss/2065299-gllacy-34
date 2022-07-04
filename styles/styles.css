@@ -1572,10 +1572,24 @@ img {
   content: "";
 }
 
-/* .control:hover .control-mark {
-  border-color: #fcfcfc;
+.control-mark {
+  fill: #2d3440;
 }
 
-.control-input:disabled + .control-mark {
-  border-color: rgba(45, 52, 64, 0.4);
-} */
+.control:hover .control-mark {
+  fill: #fcfcfc;
+}
+
+.control:hover .control-input[type="radio"]:checked + .control-mark::after {
+  background-color: #fcfcfc;
+}
+
+.control-input:disabled .control-mark {
+  fill: rgba(45, 52, 64, 0.5);
+}
+
+.control-input:disabled
+  .control-input[type="radio"]:checked
+  + .control-mark::after {
+  background-color: rgba(45, 52, 64, 0.5);
+}
