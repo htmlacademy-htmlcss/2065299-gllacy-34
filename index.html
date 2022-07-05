@@ -44,14 +44,13 @@
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
-                    fill="none"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
-                      fill="#2D3440"
                     />
                   </svg>
                   <span class="visually-hidden">Поиск</span>
@@ -65,14 +64,13 @@
                     width="16"
                     height="17"
                     viewbox="0 0 16 17"
-                    fill="none"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M9 2.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666A.666.666 0 0 0 13 13.19V3.858a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 2.525ZM5.862 4.72c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.774l-3.328 3.33a.667.667 0 1 1-.943-.944l2.195-2.195h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 5.663a.667.667 0 0 1 0-.943Z"
-                      fill="#2D3440"
                     /></svg
                   >Вход</a
                 >
@@ -89,18 +87,74 @@
                     width="16"
                     height="16"
                     viewbox="0 0 16 16"
-                    fill="none"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
-                      fill="#2D3440"
                     />
                   </svg>
-                  <span class="cart-counter">2 товара</span>
-                </a>
+                  <span class="cart-counter">2 товара</span></a
+                >
+                <div class="popover-cart">
+                  <div class="popover-content">
+                    <h2 class="popover-title">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a class="cart-item-link-img" href="#">
+                          <img
+                            class="cart-item-img"
+                            src="images/catalog/raspberry.jpg"
+                            width="46"
+                            height="46"
+                            alt="мороженое малинка."
+                        /></a>
+                        <div class="cart-item-wrap">
+                          <p class="cart-item-title">
+                            <a class="cart-item-title-link" href="#">Малинка</a>
+                          </p>
+                          <p class="cart-item-price">1 кг х 310 ₽</p>
+                        </div>
+                        <p class="cart-item-amount">310 ₽</p>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden"
+                            >Удалить из корзины</span
+                          >
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a class="cart-item-link-img" href="#"
+                          ><img
+                            class="cart-item-img"
+                            src="images/catalog/bubble-gum.jpg"
+                            width="46"
+                            height="46"
+                            alt="мороженое бабл-гам."
+                        /></a>
+                        <div class="cart-item-wrap">
+                          <p class="cart-item-title">
+                            <a class="cart-item-title-link" href="#"
+                              >Бабл-гам</a
+                            >
+                          </p>
+                          <p class="cart-item-price">1,5 кг х 320 ₽</p>
+                        </div>
+                        <p class="cart-item-amount">480 ₽</p>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden"
+                            >Удалить из корзины</span
+                          >
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="cart-order-wrap">
+                      <a class="button form-button" href="#">Оформить заказ</a>
+                      <p class="for-payment">Итого: 790 ₽</p>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -121,6 +175,7 @@
                   и молока с вкуснейшим клубничным джемом<br />– это идеальный
                   десерт для всей семьи.
                 </p>
+                <!--состояние disabled .order-button-disabled-->
                 <a class="button order-button" href="#">Заказать</a>
               </div>
               <div class="slider-element-img">
@@ -659,6 +714,7 @@
               >
             </address>
             <p class="contact-schedule">(с 10 до 20 ежедневно)</p>
+            <!--состояние disabled .form-button-disabled-->
             <a class="button form-button" href="#">Форма обратной связи</a>
           </div>
           <h2 class="visually-hidden">Контакты</h2>
