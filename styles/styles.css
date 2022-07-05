@@ -1664,25 +1664,27 @@ button .form-button:disabled {
 .user-navigation-item {
   position: relative;
 }
-
-.popover-cart {
+.popover {
   position: absolute;
   top: 40px;
   right: 0;
   z-index: 1;
   box-sizing: border-box;
-  width: 441px;
-  padding: 48px;
   font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
   color: #242424;
   background-color: #fcfcfc;
   border-radius: 8px;
-  min-height: 156px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   display: none;
+}
+
+.popover-cart {
+  width: 441px;
+  padding: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  min-height: 156px;
 }
 
 .popover-open {
@@ -1821,4 +1823,27 @@ button .form-button:disabled {
   padding: 0;
   margin: 0;
   max-width: 140px;
+}
+
+.popover-login {
+  width: 420px;
+  padding: 48px;
+}
+
+.login-form .field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.login-wrap {
+  display: flex;
+  margin-top: 16px;
+}
+
+.login-wrap .form-button {
+  margin-right: 23px;
+}
+
+.login-link {
+  font-size: 14px;
+  color: #2d3440;
 }

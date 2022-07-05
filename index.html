@@ -74,6 +74,33 @@
                     /></svg
                   >Вход</a
                 >
+                <div class="popover popover-login">
+                  <div class="popover-content popover-login-content">
+                    <h2 class="popover-title">Личный кабинет</h2>
+                    <form
+                      class="login-form"
+                      action="https://echo.htmlacademy.ru/"
+                      method="post"
+                    >
+                      <input
+                        class="field"
+                        placeholder="email@example.com"
+                        type="email"
+                        name="login"
+                      />
+                      <input class="field" type="password" name="password" />
+                      <div class="login-wrap">
+                        <button class="button form-button" type="submit">
+                          Войти
+                        </button>
+                        <div class="login-link-wrap">
+                          <a class="login-link" href="#">Забыли пароль?</a>
+                          <a class="login-link" href="#">Зегистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </li>
               <li class="user-navigation-item">
                 <a
@@ -98,7 +125,7 @@
                   </svg>
                   <span class="cart-counter">2 товара</span></a
                 >
-                <div class="popover-cart">
+                <div class="popover popover-cart">
                   <div class="popover-content">
                     <h2 class="popover-title">Корзина</h2>
                     <ul class="cart-items-list">
