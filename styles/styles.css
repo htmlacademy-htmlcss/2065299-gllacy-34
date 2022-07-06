@@ -1911,7 +1911,7 @@ button .form-button:disabled {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   padding-top: 8px;
   padding-bottom: 8px;
-  /* display: none; */
+  display: none;
 }
 
 .navigation-item {
