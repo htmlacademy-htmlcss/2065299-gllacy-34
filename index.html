@@ -21,6 +21,33 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог</a>
+              <!-- класс .popover-catalog-item-link-current при открытом каталоге -->
+              <div class="popover-catalog">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Виды мороженого</h2>
+                  <ul class="popover-catalog-list">
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-item-link" href="#">Новинки</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-item-link" href="#"
+                        >Сливочное</a
+                      >
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-item-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-item-link" href="#"
+                        >Фруктовый лед</a
+                      >
+                    </li>
+                    <li class="popover-catalog-item">
+                      <a class="popover-catalog-item-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -55,6 +82,27 @@
                   </svg>
                   <span class="visually-hidden">Поиск</span>
                 </a>
+                <div class="popover popover-search">
+                  <div class="popover-content">
+                    <form
+                      class="search-form"
+                      action="https://echo.htmlacademy.ru/"
+                      method="post"
+                    >
+                      <input
+                        class="field"
+                        placeholder="Поиск по сайту"
+                        type="search"
+                        name="search"
+                      />
+                      <!-- <button class="clear-search-form" type="button">
+                        <span class="visually-hidden"
+                          >Очистить поле поиска</span
+                        >
+                      </button> -->
+                    </form>
+                  </div>
+                </div>
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link text-nav-link" href="#">
@@ -75,7 +123,7 @@
                   >Вход</a
                 >
                 <div class="popover popover-login">
-                  <div class="popover-content popover-login-content">
+                  <div class="popover-content">
                     <h2 class="popover-title">Личный кабинет</h2>
                     <form
                       class="login-form"
@@ -180,6 +228,13 @@
                       <a class="button form-button" href="#">Оформить заказ</a>
                       <p class="for-payment">Итого: 790 ₽</p>
                     </div>
+                  </div>
+                </div>
+                <div class="popover popover-empty-cart">
+                  <div class="popover-content">
+                    <p class="popover-emtpy-descript">
+                      Ваша корзина пока пуста
+                    </p>
                   </div>
                 </div>
               </li>
