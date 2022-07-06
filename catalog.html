@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Каталог товаров Глейси</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="body-container pink-theme">
@@ -55,6 +56,27 @@
                   </svg>
                   <span class="visually-hidden">Поиск</span>
                 </a>
+                <div class="popover popover-search">
+                  <div class="popover-content">
+                    <form
+                      class="search-form"
+                      action="https://echo.htmlacademy.ru/"
+                      method="post"
+                    >
+                      <input
+                        class="field search-field"
+                        placeholder="Поиск по сайту"
+                        type="text"
+                        name="search"
+                      />
+                      <button class="clear-search-form" type="button">
+                        <span class="visually-hidden"
+                          >Очистить поле поиска</span
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </li>
               <li class="user-navigation-item">
                 <a class="user-navigation-link text-nav-link" href="#">
@@ -87,8 +109,15 @@
                         placeholder="email@example.com"
                         type="email"
                         name="login"
+                        required
                       />
-                      <input class="field" type="password" name="password" />
+                      <input
+                        class="field"
+                        placeholder="******"
+                        type="password"
+                        name="password"
+                        required
+                      />
                       <div class="login-wrap">
                         <button class="button form-button" type="submit">
                           Войти
@@ -145,7 +174,7 @@
                           <p class="cart-item-price">1 кг х 310 ₽</p>
                         </div>
                         <p class="cart-item-amount">310 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden"
                             >Удалить из корзины</span
                           >
@@ -169,7 +198,7 @@
                           <p class="cart-item-price">1,5 кг х 320 ₽</p>
                         </div>
                         <p class="cart-item-amount">480 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden"
                             >Удалить из корзины</span
                           >
@@ -251,12 +280,12 @@
               <div class="range-wrapper-toggle">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 24px; width: 72px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden"
                         >Изменить минимальную цену.</span
                       >
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden"
                         >Изменить максимальную цену.</span
                       >

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="body-container pink-theme">
@@ -21,7 +22,7 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Каталог</a>
-              <!-- класс .popover-catalog-item-link-current при открытом каталоге -->
+              <!-- класс .popover-catalog-current при открытом каталоге -->
               <div class="popover-catalog">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Виды мороженого</h2>
@@ -90,16 +91,16 @@
                       method="post"
                     >
                       <input
-                        class="field"
+                        class="field search-field"
                         placeholder="Поиск по сайту"
-                        type="search"
+                        type="text"
                         name="search"
                       />
-                      <!-- <button class="clear-search-form" type="button">
+                      <button class="clear-search-form" type="button">
                         <span class="visually-hidden"
                           >Очистить поле поиска</span
                         >
-                      </button> -->
+                      </button>
                     </form>
                   </div>
                 </div>
@@ -135,8 +136,15 @@
                         placeholder="email@example.com"
                         type="email"
                         name="login"
+                        required
                       />
-                      <input class="field" type="password" name="password" />
+                      <input
+                        class="field password-field"
+                        placeholder="******"
+                        type="password"
+                        name="password"
+                        required
+                      />
                       <div class="login-wrap">
                         <button class="button form-button" type="submit">
                           Войти
@@ -193,7 +201,7 @@
                           <p class="cart-item-price">1 кг х 310 ₽</p>
                         </div>
                         <p class="cart-item-amount">310 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden"
                             >Удалить из корзины</span
                           >
@@ -217,7 +225,7 @@
                           <p class="cart-item-price">1,5 кг х 320 ₽</p>
                         </div>
                         <p class="cart-item-amount">480 ₽</p>
-                        <button type="button" class="cart-item-button">
+                        <button class="cart-item-button" type="button">
                           <span class="visually-hidden"
                             >Удалить из корзины</span
                           >
@@ -686,6 +694,7 @@
                   placeholder="email@example.com"
                   type="email"
                   name="newsletter-email"
+                  required
                 />
                 <button class="button form-button" type="submit">
                   Отправить
@@ -738,6 +747,7 @@
                   id="delivery-date"
                   name="delivery-date"
                   placeholder="01.04.2020"
+                  required
                 />
               </p>
               <p class="field-group delivery-form-phone">
@@ -748,6 +758,7 @@
                   id="delivery-phone"
                   name="delivery-phone"
                   placeholder="+7 800 999-00-00"
+                  required
                 />
               </p>
               <p class="field-group delivery-form-adress">
@@ -773,6 +784,7 @@
                   id="delivery-adress"
                   name="delivery-adress"
                   placeholder="ул. Большая Конюшенная, 19/8"
+                  required
                 />
               </p>
               <button class="button form-button" type="submit">

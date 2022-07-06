@@ -860,12 +860,12 @@ button .form-button:disabled {
 }
 
 .cart-disabled {
-  background-color: #565c66;
+  background-color: #b9b9b9;
   box-shadow: none;
 }
 
 .cart-disabled .cart-icon {
-  fill: #b9b9b9;
+  fill: #565c66;
 }
 
 .waffle-wrapper {
@@ -1404,11 +1404,11 @@ button .form-button:disabled {
   outline: none;
 }
 
-.field:invalid {
+.field:not(:placeholder-shown):invalid {
   border: 1px solid #ea5454;
 }
 
-.field:invalid:hover {
+.field:not(:placeholder-shown):invalid:hover {
   border: 2px solid #ea5454;
 }
 
@@ -1431,6 +1431,11 @@ button .form-button:disabled {
 .field::placeholder {
   font: inherit;
   color: #b9b9b9;
+}
+
+.field:not(:placeholder-shown) {
+  color: #2d3440;
+  font-weight: 400;
 }
 
 .range-scale {
@@ -1874,7 +1879,7 @@ button .form-button:disabled {
   width: 100%;
 }
 
-/* .search-form {
+.search-form {
   position: relative;
 }
 
@@ -1893,10 +1898,10 @@ button .form-button:disabled {
   display: none;
 }
 
-.search-form .field:not(:placeholder-shown) .clear-search-form {
+.search-field:not(:placeholder-shown) ~ .clear-search-form {
   display: block;
   opacity: 0.4;
-} */
+}
 
 .popover-catalog {
   position: absolute;
@@ -1948,7 +1953,7 @@ button .form-button:disabled {
   background-color: #ff7799;
 }
 
-.popover-catalog-item-link-current {
+.popover-catalog-current {
   color: #fcfcfc;
   background-color: #ff4a78;
 }
