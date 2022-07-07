@@ -1799,7 +1799,7 @@ button .form-button:disabled {
   height: 16px;
   border: none;
   background-color: transparent;
-  background-image: url("../images/icon/cross.svg");
+  background-image: url("../images/icon/сross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
