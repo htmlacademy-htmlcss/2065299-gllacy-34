@@ -1717,6 +1717,7 @@ button .form-button:disabled {
 .cart-items-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
   list-style-type: none;
   height: 150px;
   overflow-y: auto;
@@ -1730,7 +1731,7 @@ button .form-button:disabled {
 
 .cart-item:last-child {
   padding-bottom: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   border-bottom: 1px solid #e7e7e7;
 }
 
