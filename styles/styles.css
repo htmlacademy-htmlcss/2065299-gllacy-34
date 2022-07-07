@@ -1637,12 +1637,12 @@ button .form-button:disabled {
   font-weight: normal;
   text-transform: none;
   padding: 10px 8px;
-  max-width: 162px;
   border: 1px solid #b9b9b9;
   position: absolute;
   top: -10px;
   left: 22px;
   display: none;
+  width: 163px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
