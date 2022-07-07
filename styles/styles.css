@@ -1675,7 +1675,6 @@ button .form-button:disabled {
   top: 40px;
   right: 0;
   z-index: 1;
-  box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: #242424;
   background-color: #fcfcfc;
@@ -1840,9 +1839,13 @@ button .form-button:disabled {
   width: 100%;
   margin-bottom: 16px;
 }
+
+.login-form .field:last-of-type {
+  margin-bottom: 32px;
+}
+
 .login-wrap {
   display: flex;
-  margin-top: 16px;
 }
 
 .login-wrap .form-button {
