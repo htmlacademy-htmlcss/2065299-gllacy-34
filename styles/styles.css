@@ -1068,10 +1068,18 @@ button .form-button:disabled {
   flex-direction: column;
 }
 
+.form-label-wrapper {
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
 .form-label {
   line-height: 20px;
   font-weight: 700;
   color: #2d3440;
+}
+
+.delivery-form-phone .form-label {
   margin-bottom: 8px;
 }
 
@@ -1239,6 +1247,7 @@ button .form-button:disabled {
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   border-radius: 18px;
   padding: 8px 8px 8px 24px;
 }
@@ -1255,6 +1264,7 @@ button .form-button:disabled {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .catalog-filter-title,
 .control-select {
@@ -1513,10 +1523,11 @@ button .form-button:disabled {
 
 .range-price {
   display: flex;
+  margin-bottom: 8px;
+  margin-left: 16px;
 }
 
 .control-select,
-.range-price,
 .catalog-filter-title {
   margin-left: 16px;
 }
@@ -1546,10 +1557,13 @@ button .form-button:disabled {
   padding: 6px 61px 6px 14px;
 }
 
+.catalog-filter-item {
+  margin-right: 16px;
+}
+
 .control {
   position: relative;
   display: block;
-  margin-right: 16px;
   padding-left: 24px;
 }
 
@@ -1610,8 +1624,7 @@ button .form-button:disabled {
 /* тултип */
 .tooltip {
   position: absolute;
-  margin-top: 3px;
-  margin-left: 4px;
+  margin: 3px 0 3px 4px;
   width: 14px;
   height: 14px;
 }

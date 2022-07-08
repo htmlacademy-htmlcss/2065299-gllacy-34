@@ -21,9 +21,10 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
+              <!-- для ссылки класс .popover-catalog-current при открытом каталоге -->
               <a class="navigation-link" href="catalog.html">Каталог</a>
-              <!-- класс .popover-catalog-current при открытом каталоге -->
-              <div class="popover-catalog popover-open">
+              <!-- для отображения поповера класс .popover-open-->
+              <div class="popover-catalog">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Виды мороженого</h2>
                   <ul class="popover-catalog-list">
@@ -31,7 +32,7 @@
                       <a class="popover-catalog-item-link" href="#">Новинки</a>
                     </li>
                     <li class="popover-catalog-item">
-                      <a class="popover-catalog-item-link" href="#"
+                      <a class="popover-catalog-item-link" href="catalog.html"
                         >Сливочное</a
                       >
                     </li>
@@ -731,7 +732,7 @@
               method="post"
             >
               <p class="field-group delivery-form-date">
-                <span class="form-label"
+                <span class="form-label-wrapper"
                   ><label class="form-label" for="delivery-date">Дата </label>
                   <span class="tooltip">
                     <button
@@ -768,7 +769,7 @@
                 />
               </p>
               <p class="field-group delivery-form-adress">
-                <span class="form-label"
+                <span class="form-label-wrapper"
                   ><label class="form-label" for="delivery-date">Адрес </label>
                   <span class="tooltip"
                     ><button
