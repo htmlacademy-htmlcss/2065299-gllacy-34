@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  min-width: 1366px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -290,6 +291,7 @@ button .form-button:disabled {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   max-width: 480px;
 }
 
@@ -311,6 +313,8 @@ button .form-button:disabled {
   color: inherit;
   display: block;
   font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .icon-nav-link {
@@ -690,8 +694,9 @@ button .form-button:disabled {
 }
 
 .gift-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -744,7 +749,7 @@ button .form-button:disabled {
 .popular-list {
   display: grid;
   grid-template-columns: repeat(4, 270px);
-  gap: 30px;
+  gap: 90px 30px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -810,6 +815,7 @@ button .form-button:disabled {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  max-width: 150px;
 }
 
 .price-block {
@@ -939,8 +945,9 @@ button .form-button:disabled {
 }
 
 .index-column {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  gap: 30px;
   margin-bottom: 80px;
 }
 
@@ -1293,6 +1300,7 @@ button .form-button:disabled {
 .pagination-wrapper {
   padding: 41px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -1301,7 +1309,9 @@ button .form-button:disabled {
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-self: center;
+  max-width: 700px;
 }
 
 .pagination-wrapper .order-button {
@@ -1313,11 +1323,13 @@ button .form-button:disabled {
   text-decoration: none;
   line-height: 20px;
   display: block;
-  width: 11px;
-  height: 20px;
+  min-width: 11px;
+  min-height: 20px;
   padding: 2px 7px;
   box-sizing: content-box;
   border-radius: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .pagination-current {
