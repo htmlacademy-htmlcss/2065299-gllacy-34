@@ -260,106 +260,108 @@
       <main class="main-container page-container">
         <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
         <section class="slider">
-          <h2 class="visually-hidden">Презентация мороженого</h2>
-          <ul class="slider-list">
-            <li class="slider-element slider-element-active">
-              <div class="slider-element-text">
-                <h3 class="slider-title">
-                  Нежный пломбир<br />с клубничным джемом
-                </h3>
-                <p class="slider-description">
-                  Натуральное мороженое из свежих сливок<br />
-                  и молока с вкуснейшим клубничным джемом<br />– это идеальный
-                  десерт для всей семьи.
-                </p>
-                <!--состояние disabled .order-button-disabled-->
-                <a class="button order-button" href="#">Заказать</a>
-              </div>
-              <div class="slider-element-img">
-                <img
-                  class="choosen-slider-item"
-                  src="images/slider/slider-strawberry.png"
-                  width="306"
-                  height="507"
-                  alt="Нежный пломбир с клубничным джемом."
+          <div class="slider-wrapper">
+            <h2 class="visually-hidden">Презентация мороженого</h2>
+            <ul class="slider-list">
+              <li class="slider-element slider-element-active">
+                <div class="slider-element-text">
+                  <h3 class="slider-title">
+                    Нежный пломбир<br />с клубничным джемом
+                  </h3>
+                  <p class="slider-description">
+                    Натуральное мороженое из свежих сливок<br />
+                    и молока с вкуснейшим клубничным джемом<br />– это идеальный
+                    десерт для всей семьи.
+                  </p>
+                  <!--состояние disabled .order-button-disabled-->
+                  <a class="button order-button" href="#">Заказать</a>
+                </div>
+                <div class="slider-element-img">
+                  <img
+                    class="choosen-slider-item"
+                    src="images/slider/slider-strawberry.png"
+                    width="306"
+                    height="507"
+                    alt="Нежный пломбир с клубничным джемом."
+                  />
+                </div>
+              </li>
+              <li class="slider-element slider-element-next">
+                <div class="slider-element-text">
+                  <h3 class="slider-title">
+                    Сливочное мороженое со вкусом банана
+                  </h3>
+                  <p class="slider-description">
+                    Сливочное мороженое с ярким банановым вкусом подарит вам
+                    свежесть и наслаждение даже в самый жаркий летний день.
+                  </p>
+                  <a class="button order-button" href="#">Заказать</a>
+                </div>
+                <div class="slider-element-img">
+                  <img
+                    class="choosen-slider-item"
+                    src="images/slider/slider-banana.png"
+                    width="306"
+                    height="507"
+                    alt="Сливочное мороженое со вкусом банана."
+                  />
+                </div>
+              </li>
+              <li class="slider-element slider-element-next">
+                <div class="slider-element-text">
+                  <h3 class="slider-title">
+                    Карамельный пломбир<br />с маршмеллоу
+                  </h3>
+                  <p class="slider-description">
+                    Необычный сладкий десерт с карамельным топпингом и кусочками
+                    зефира завоюет сердца сладкоежек всех возрастов.
+                  </p>
+                  <a class="button order-button" href="#">Заказать</a>
+                </div>
+                <div class="slider-element-img">
+                  <img
+                    class="choosen-slider-item"
+                    src="images/slider/slider-marshmallow.png"
+                    width="306"
+                    height="507"
+                    alt="Карамельный пломбир с маршмеллоу."
+                  />
+                </div>
+              </li>
+            </ul>
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее мороженое</span>
+              <svg
+                class="icon-slider-button"
+                width="16"
+                height="16"
+                viewbox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z"
                 />
-              </div>
-            </li>
-            <li class="slider-element slider-element-next">
-              <div class="slider-element-text">
-                <h3 class="slider-title">
-                  Сливочное мороженое со вкусом банана
-                </h3>
-                <p class="slider-description">
-                  Сливочное мороженое с ярким банановым вкусом подарит вам
-                  свежесть и наслаждение даже в самый жаркий летний день.
-                </p>
-                <a class="button order-button" href="#">Заказать</a>
-              </div>
-              <div class="slider-element-img">
-                <img
-                  class="choosen-slider-item"
-                  src="images/slider/slider-banana.png"
-                  width="306"
-                  height="507"
-                  alt="Сливочное мороженое со вкусом банана."
+              </svg>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее мороженое</span>
+              <svg
+                class="icon-slider-button"
+                width="16"
+                height="16"
+                viewbox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94L7.135 2.864Z"
                 />
-              </div>
-            </li>
-            <li class="slider-element slider-element-next">
-              <div class="slider-element-text">
-                <h3 class="slider-title">
-                  Карамельный пломбир<br />с маршмеллоу
-                </h3>
-                <p class="slider-description">
-                  Необычный сладкий десерт с карамельным топпингом и кусочками
-                  зефира завоюет сердца сладкоежек всех возрастов.
-                </p>
-                <a class="button order-button" href="#">Заказать</a>
-              </div>
-              <div class="slider-element-img">
-                <img
-                  class="choosen-slider-item"
-                  src="images/slider/slider-marshmallow.png"
-                  width="306"
-                  height="507"
-                  alt="Карамельный пломбир с маршмеллоу."
-                />
-              </div>
-            </li>
-          </ul>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее мороженое</span>
-            <svg
-              class="icon-slider-button"
-              width="16"
-              height="16"
-              viewbox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.865 13.135a.665.665 0 0 0 .94-.94L5.604 7.994l4.201-4.202a.665.665 0 0 0-.94-.94L4.196 7.52l-.003.003c-.26.26-.26.681 0 .94l4.672 4.672Z"
-              />
-            </svg>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее мороженое</span>
-            <svg
-              class="icon-slider-button"
-              width="16"
-              height="16"
-              viewbox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.668.003-.003c.26-.26.26-.681 0-.94L7.135 2.864Z"
-              />
-            </svg>
-          </button>
+              </svg>
+            </button>
+          </div>
           <div class="slider-bottom">
             <ul class="slider-pagination">
               <li class="slider-pagination-item">
@@ -466,30 +468,16 @@
                 </p>
                 <a class="button order-button" href="#">Хочу подарок</a>
               </div>
-              <img
-                class="gift-img"
-                src="images/gift/gift-raspberry.png"
-                width="219"
-                height="268"
-                alt="Малинка в подарок."
-              />
             </li>
             <li class="gift-item">
               <div class="condition-wrapper">
                 <h3 class="gift-description">Маршмеллоу даром!</h3>
                 <p class="gift-condition">
-                  При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
-                  зефирок совершенно бесплатно.
+                  При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку
+                  нежных<br />зефирок совершенно бесплатно.
                 </p>
                 <a class="button order-button" href="#">Хочу подарок</a>
               </div>
-              <img
-                class="gift-img"
-                src="images/gift/gift-marshmallow.png"
-                width="219"
-                height="268"
-                alt="Маршмеллоу в подарок."
-              />
             </li>
           </ul>
         </section>
@@ -583,7 +571,7 @@
                 <h3 class="product-item-title">Черника</h3>
               </a>
               <p class="product-item-description">
-                Крем-брюле с черничным джемом
+                Крем-брюле с&nbsp;черничным джемом
               </p>
               <div class="price-block">
                 <b class="product-item-price">330 ₽/кг</b>
@@ -619,7 +607,7 @@
                 <h3 class="product-item-title">Бабл-гам</h3>
               </a>
               <p class="product-item-description">
-                Ванильный пломбир со сладкой посыпкой
+                Ванильный пломбир со&nbsp;сладкой посыпкой
               </p>
               <div class="price-block">
                 <b class="product-item-price">320 ₽/кг</b>
@@ -664,7 +652,7 @@
                 долговременное сотрудничество.
               </li>
               <li class="advantages-item">
-                Для приготовления мороженого используются сливки и молоко
+                Для приготовления мороженого используются сливки и&nbsp;молоко
                 высочайшего качества. Все ингредиенты<br />и добавки произведены
                 из натурального сырья.
               </li>
@@ -680,7 +668,7 @@
           <article class="blog">
             <h2 class="blog-new">Новое в нашем блоге</h2>
             <a class="blog-link" href="#"
-              >10 способов сервировки фруктовых щербетов к столу</a
+              >10 способов сервировки фруктовых щербетов к&nbsp;столу</a
             >
           </article>
           <div class="stripes">
@@ -689,7 +677,7 @@
               <p class="newsletter-add">
                 Подпишитесь на нашу сладкую рассылку и будьте всегда<br />в
                 курсе всего самого вкусного, что у нас происходит. Обещаем не
-                спамить и не слать всякой ненужной ерунды. Честно=)
+                спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form
                 class="newsletter-form"
