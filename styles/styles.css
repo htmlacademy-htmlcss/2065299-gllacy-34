@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -399,8 +406,8 @@ button .form-button:disabled {
 }
 
 .slider-element {
-  display: flex;
   align-items: center;
+  display: none;
 }
 
 .slider-element:not(:last-of-type) {
@@ -421,9 +428,6 @@ button .form-button:disabled {
   z-index: 0;
 }
 
-.slider-element {
-  display: none;
-}
 .choosen-slider-item {
   display: block;
 }
@@ -495,7 +499,8 @@ button .form-button:disabled {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.pink-theme .slider-element-next .slider-element-img::after,
+
+.pink-theme .slider-element-active .slider-element-img::after,
 .pink-theme .slider-element-next .slider-element-img::after {
   background-color: #ffcbd8;
 }
@@ -810,6 +815,7 @@ button .form-button:disabled {
 .product-item-link:hover .product-item-title {
   color: #565c66;
 }
+
 .product-item-link:active .product-item-title {
   color: #b9b9b9;
 }
@@ -1215,6 +1221,7 @@ button .form-button:disabled {
   background-repeat: no-repeat;
   left: -24px;
 }
+
 .about-us-item {
   position: relative;
 }
@@ -1232,6 +1239,7 @@ button .form-button:disabled {
   width: 193px;
   margin-right: 14px;
 }
+
 .creator-description {
   font-size: 12px;
   line-height: 16px;
@@ -1319,11 +1327,7 @@ button .form-button:disabled {
 .catalog-filter-title,
 .control-select {
   margin-bottom: 8px;
-}
-
-.select-group {
-  background-color: rgba(252, 252, 252, 0.3);
-  border: 0;
+  margin-left: 16px;
 }
 
 .product-list {
@@ -1566,11 +1570,13 @@ button .form-button:disabled {
   text-align: center;
   background-color: transparent;
   border: none;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1578,11 +1584,6 @@ button .form-button:disabled {
 .range-price {
   display: flex;
   margin-bottom: 8px;
-  margin-left: 16px;
-}
-
-.control-select,
-.catalog-filter-title {
   margin-left: 16px;
 }
 
@@ -1596,6 +1597,7 @@ button .form-button:disabled {
   background-image: url("../images/icon/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 13px center;
+  -webkit-appearance: none;
   appearance: none;
   box-sizing: border-box;
 }
@@ -1631,6 +1633,7 @@ button .form-button:disabled {
   height: 16px;
   left: 0;
   top: 2px;
+  fill: #2d3440;
 }
 
 .checkbox-input-checked {
@@ -1655,10 +1658,6 @@ button .form-button:disabled {
   background-color: #2d3440;
   border-radius: 50%;
   content: "";
-}
-
-.control-mark {
-  fill: #2d3440;
 }
 
 .control:hover .control-mark {
@@ -1688,6 +1687,7 @@ button .form-button:disabled {
 .catalog-products {
   margin-bottom: 40px;
 }
+
 /* тултип */
 .tooltip {
   position: absolute;
@@ -1730,7 +1730,7 @@ button .form-button:disabled {
   display: block;
 }
 
-.tooltip-text:after {
+.tooltip-text::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -1852,6 +1852,7 @@ button .form-button:disabled {
   margin: 0;
   margin-bottom: 4px;
 }
+
 .cart-item-price {
   font-size: 14px;
   line-height: 20px;
@@ -1903,6 +1904,7 @@ button .form-button:disabled {
   align-items: center;
   justify-content: space-between;
 }
+
 .for-payment {
   padding: 0;
   margin: 0;
