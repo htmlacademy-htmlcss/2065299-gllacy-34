@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  min-width: 1366px;
+  min-width: 1200px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -100,6 +100,7 @@ img {
   border: none;
   cursor: pointer;
   display: inline-block;
+  max-width: 250px;
 }
 
 .form-button {
@@ -974,7 +975,8 @@ button .form-button:disabled {
   background-color: #fcfcfc;
   background-image: url("../images/background/news.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 115%;
+  background-position: right -78px top -108px;
   width: 570px;
   border-radius: 16px;
   padding: 32px;
@@ -1037,7 +1039,7 @@ button .form-button:disabled {
   color: #565c66;
   margin: 0;
   width: 506px;
-  margin-bottom: 41px;
+  margin-bottom: 42px;
 }
 
 .delivery {
@@ -1130,7 +1132,7 @@ button .form-button:disabled {
   width: 343px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 40px;
+  padding: 40px 40px 42px;
   margin-right: auto;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.15);
 }
@@ -1173,7 +1175,7 @@ button .form-button:disabled {
 .page-footer {
   display: flex;
   align-items: flex-start;
-  padding: 48px 0;
+  padding: 46px 0 48px;
 }
 
 .footer-social-list {
@@ -1468,19 +1470,19 @@ button .form-button:disabled {
 
 .field:focus-visible {
   border: 2px solid #2d3440;
+  padding: 13px 15px;
   outline: none;
 }
 
-.field:not(:placeholder-shown):invalid {
+/*состояние :invalid для полей форм класс .field-error*/
+
+.field-error {
   border: 1px solid #ea5454;
 }
 
-.field:not(:placeholder-shown):invalid:hover {
+.field-error:hover {
   border: 2px solid #ea5454;
-}
-
-.field:focus-visible:invalid {
-  border: 2px solid #ea5454;
+  padding: 13px 15px;
 }
 
 .field:disabled {
@@ -1633,7 +1635,7 @@ button .form-button:disabled {
   height: 16px;
   left: 0;
   top: 2px;
-  fill: #2d3440;
+  color: #2d3440;
 }
 
 .checkbox-input-checked {
@@ -1660,21 +1662,26 @@ button .form-button:disabled {
   content: "";
 }
 
-.control:hover .control-mark {
-  fill: #fcfcfc;
+.control-input[type="radio"]:hover + .control-mark,
+.control-input[type="radio"]:focus-visible + .control-mark {
+  color: #fcfcfc;
 }
 
-.control:hover .control-input[type="radio"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:hover ~ .control-mark,
+.control-input[type="checkbox"]:focus-visible ~ .control-mark {
+  color: #fcfcfc;
+}
+
+.control-input[type="radio"]:hover + .control-mark::after,
+.control-input[type="radio"]:focus-visible + .control-mark::after {
   background-color: #fcfcfc;
 }
 
 .control-input:disabled ~ .control-mark {
-  fill: rgba(45, 52, 64, 0.5);
+  color: rgba(45, 52, 64, 0.5);
 }
 
-.control-input:disabled
-  .control-input[type="radio"]:checked
-  ~ .control-mark::after {
+.control-input[type="radio"]:checked:disabled ~ .control-mark::after {
   background-color: rgba(45, 52, 64, 0.5);
 }
 
@@ -2047,7 +2054,7 @@ button .form-button:disabled {
   background-color: #ff7799;
 }
 
-.popover-catalog-current {
+.navigation-link-current {
   color: #fcfcfc;
   background-color: #ff4a78;
 }
