@@ -129,7 +129,7 @@ img {
   outline: none;
 }
 
-button .form-button:disabled {
+.form-button-condition:disabled {
   font-weight: 400;
   color: #565c66;
   background-color: #b9b9b9;
@@ -253,12 +253,12 @@ button .form-button:disabled {
 
 .navigation-logo[href]:hover,
 .academy-logo-link:hover {
-  box-shadow: 0 4px 2px 0 rgba(252, 252, 252, 0.5);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .navigation-logo[href]:active,
 .academy-logo-link:active {
-  box-shadow: 0 4px 2px 0 rgba(252, 252, 252, 0.3);
+  background-color: #fcfcfc;
 }
 
 .navigation-logo[href]:focus-visible,
@@ -1206,12 +1206,6 @@ button .form-button:disabled {
 
 .for-provider {
   font-weight: 700;
-  /* padding-left: 24px;
-  background-image: url("../images/icon/heart-fill.svg");
-  background-color: transparent;
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: center left; */
 }
 
 .for-provider::before {
@@ -1457,22 +1451,35 @@ button .form-button:disabled {
   outline: none;
 }
 
-.field {
+.field,
+.feedback-field {
   padding: 14px 16px;
   margin: 0;
+  font-family: inherit;
+  font-size: 16px;
   line-height: 20px;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
-  font-size: 16px;
+}
+
+.field {
   height: 48px;
 }
 
-.field:hover {
+.feedback-field {
+  width: 100%;
+  resize: none;
+  margin-bottom: 26px;
+}
+
+.field:hover,
+.feedback-field:hover {
   border: 1px solid #2d3440;
 }
 
-.field:focus-visible {
+.field:focus-visible,
+.feedback-field:focus-visible {
   border: 2px solid #2d3440;
   padding: 13px 15px;
   outline: none;
@@ -1489,25 +1496,29 @@ button .form-button:disabled {
   padding: 13px 15px;
 }
 
-.field:disabled {
+.field:disabled,
+.feedback-field:disabled {
   background-color: #e7e7e7;
   border: 1px solid #b9b9b9;
   color: rgba(45, 52, 64, 0.65);
 }
 
-.field:disabled:hover {
+.field:disabled:hover,
+.feedback-field:disabled:hover {
   background-color: #e7e7e7;
   border: 1px solid #b9b9b9;
   color: #2d3440;
 }
 
-.field::placeholder {
-  font-size: 16px;
+.field::placeholder,
+.feedback-field::placeholder {
+  font-family: inherit;
   line-height: 20px;
   color: #b9b9b9;
 }
 
-.field:not(:placeholder-shown) {
+.field:not(:placeholder-shown),
+.feedback-field:not(:placeholder-shown) {
   color: #2d3440;
   font-weight: 400;
 }
@@ -2066,4 +2077,68 @@ button .form-button:disabled {
 .navigation-link-current {
   color: #fcfcfc;
   background-color: #ff4a78;
+}
+
+/* модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 64px 66px 64px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.modal-feedback {
+  width: 570px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 20px;
+  background-color: #fcfcfc;
+  border: none;
+  background-image: url("../images/icon/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2d3440;
+}
+
+.feedback-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.feedback-button-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-container-close {
+  display: none;
 }
